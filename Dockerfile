@@ -1,4 +1,4 @@
-FROM golang:1.13-buster as build
+FROM golang:1.21-bullseye as build
 
 RUN apt-get update && apt-get install apt ca-certificates -y && \
     useradd -u 1000 ekscloudwatch
